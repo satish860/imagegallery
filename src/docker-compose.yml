@@ -1,0 +1,14 @@
+version: '3.7'
+services:
+
+    accesslog:
+        image: satish860/accesslogs:v1
+    iotd:
+        image: satish860/iotd:v1
+        ports: 
+            - "80"
+    image-gallery:
+        image: satish860/image-gallery:v1
+        ports: 
+            - "9000:80"
+    
